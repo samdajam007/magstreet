@@ -1,0 +1,53 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.signupForm {
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 350px;
+}
+
+.signupForm fieldset {
+    display: none;
+}
+
+.form-group.required .control-label:after {
+    content: " *";
+    color: red;
+}
+
+.error_message {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10% 0 0 0;
+    display: table;
+}
+
+.error_message .alert-danger {
+    display: none;
+}
+
+.message p {
+    font-size: 18px;
+}
+
+.submit_btn {
+    float: right;
+}
+
+.loading_img {
+    float: left;
+    padding: 7px;
+}
+
+.signupForm input:focus:invalid:focus, .signupForm select:focus:invalid:focus {
+    border-color: #e9322d;
+}
